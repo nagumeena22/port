@@ -1,0 +1,143 @@
+.footer {
+  width: 100%;
+  padding: 40px 20px 25px;
+  background: #1e1e1e;
+  text-align: center;
+  position: relative;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 18px;
+}
+
+.footer-icons a {
+  color: #b5b5b5;
+  transition: all 0.3s ease;
+}
+
+.footer-icons a svg {
+  width: 26px;
+  height: 26px;
+}
+
+.footer-icons a:hover {
+  color: #22c55e;
+  transform: translateY(-5px) scale(1.2);
+  filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.8));
+}
+
+.footer-text {
+  color: #9ca3af;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.footer-text span {
+  margin-left: 6px;
+}
+
+.footer-credit {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 20px 35px;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.95),
+    rgba(10, 10, 10, 1)
+  );
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* subtle glow line on top */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #22c55e, transparent);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+}
+
+/* ---------- ICONS ---------- */
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  color: #9ca3af;
+  transition: all 0.3s ease;
+}
+
+.footer-icons a svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* hover glow */
+.footer-icons a:hover {
+  color: #22c55e;
+  transform: translateY(-6px) scale(1.2);
+  filter: drop-shadow(0 0 14px rgba(34, 197, 94, 0.9));
+}
+
+/* ---------- TEXT ---------- */
+
+.footer-text {
+  color: #d1d5db;
+  font-size: 14px;
+  margin: 10px 0 4px;
+}
+
+.footer-text span {
+  margin: 0 6px;
+  font-size: 16px;
+}
+
+/* credit */
+.footer-credit {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 480px) {
+  footer {
+    padding: 40px 15px 25px;
+  }
+
+  .footer-icons {
+    gap: 20px;
+  }
+
+  .footer-icons a svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+}
+
